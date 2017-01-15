@@ -4,15 +4,19 @@
     <title>HTML Academy Bakery</title>
     <meta charset=utf-8>    
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700|Alegreya:400,700|Playfair+Display:700" rel="stylesheet"> 
     <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="normalize.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
-        <nav class="page-header__nav">
+      <nav class="page-header__nav">
+        <div class="container">
           <ul class="page-header__menu">
             <li class="page-header__menu-item page-header__menu-item--logo">
-              <a class="page-header__menu-link page-header__menu-link--logo" href="#">Gustoso</a>
+              <a class="page-header__menu-link page-header__menu-link--logo" href="#">
+                <img src="./img/logo-header.png" width="140" height="44" alt="Gustoso">
+              </a>
             </li>
             <li class="page-header__menu-item">
               <a class="page-header__menu-link" href="#">Welcome</a>
@@ -31,20 +35,22 @@
             </li>
           </ul>
           <ul class="page-header__socials">
-            <li class="page-header__socials-item page-header__socials-item--twitter">
-              <a class="page-header__socials-link" href="#">twitter</a>
+            <li class="page-header__socials-item">
+              <a class="page-header__socials-link page-header__socials-link--twitter" href="#"><span class="visually-hidden">twitter</span></a>
             </li>
-            <li class="page-header__socials-item page-header__socials-item--facebook">
-              <a class="page-header__socials-link" href="#">facebook</a>
+            <li class="page-header__socials-item">
+              <a class="page-header__socials-link page-header__socials-link--facebook" href="#"><span class="visually-hidden">facebook</span></a>
             </li>
-            <li class="page-header__socials-item page-header__socials-item--instagam">
-              <a class="page-header__socials-link" href="#">instagam</a>
+            <li class="page-header__socials-item">
+              <a class="page-header__socials-link page-header__socials-link--instagram" href="#"><span class="visually-hidden">instagam</span></a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </nav>
+      <div class="container">
         <h1 class="page-header__title">Pastry with love</h1>
         <p class="page-header__subtitle">We’re bringing you fresh ingredients every day in ways you can’t resist.</p>
-        <a class="page-header__ghost-button" href="#">our menu</a>
+        <a class="page-header__menu-button ghost-button" href="#">our menu</a>
       </div>
     </header>
     <main>
