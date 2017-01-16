@@ -161,6 +161,7 @@ body {
   padding-bottom: 63px;
 
   text-align: center;
+  letter-spacing: 6px;
 
   color: #fff;
   text-shadow: 0 1px 0 #3d3029;
@@ -265,7 +266,6 @@ body {
 }
 
 .art-of-cakes__title--small {
-  font-family: Alegreya;
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -298,6 +298,7 @@ body {
 
 .art-of-cakes__quote {
   display: block;
+
   margin: 5px auto 0;
 }
 
@@ -305,9 +306,222 @@ body {
   margin-top: 22px;
 }
 
+.tasty-pancakes {
+  padding-top: 140px;
+  padding-bottom: 108px;
+
+  background: #e8eae6 url('./img/bg-tasty-pancakes.jpg');
+  background-size: cover;
+}
+
+.tasty-pancakes__widget {
+  position: relative;
+
+  display: flex;
+
+  width: 966px;
+  margin: 0;
+  margin-left: 95px;
+
+  background: #fff;
+  box-shadow: 6px 6px 13px rgba(0,0,0,.47);
+}
+
+.tasty-pancakes__image {
+  float: left;
+
+  margin-left: -50px;
+}
+
+.tasty-pancakes__right {
+  position: relative;
+
+  float: right;
+
+  width: 546px;
+  margin-left: -115px;
+  padding-top: 65px;
+  padding-right: 59px;
+  padding-left: 62px;
+
+  background: #fff url('./img/windmill.png') 100% 100% no-repeat;
+  box-shadow: -1px 0 5px rgba(0,0,0,.46);
+}
+
+.tasty-pancakes__title,
+.tasty-pancakes__text {
+  color: #56534c;
+}
+
+.tasty-pancakes__title {
+  font-size: 48px;
+  font-weight: 700;
+
+  margin: 0;
+}
+
+.tasty-pancakes__subtitle {
+  font-size: 14px;
+  font-weight: 700;
+
+  margin: 0 0 60px;
+
+  text-transform: uppercase;
+
+  color: #a47d5e;
+}
+
+.tasty-pancakes__text {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  width: 400px;
+  margin-top: 21px;
+  margin-bottom: 100px;
+
+  letter-spacing: 2px;
+
+  color: #56534c;
+}
+
+.tasty-pancakes__widget .timing-element {
+  position: absolute;
+  top: -45px;
+  right: -107px;
+}
+
+.tasty-pancakes__item {
+  display: inline-block;
+
+  margin: 0 15px;
+
+  vertical-align: top;
+}
+
+.tasty-pancakes__items-list {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tasty-pancakes__item--paginator:hover {
+  opacity: .7;
+}
+
+.tasty-pancakes__item--paginator {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+
+  cursor: pointer;
+}
+
+.tasty-pancakes__menu-button {
+  position: absolute;
+  z-index: 2;
+  top: 232px;
+  left: 395px;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background: white;
+  box-shadow: -1px 0 5px rgba(0,0,0,.46);
+}
+
+.tasty-pancakes__menu-button:hover {
+  opacity: 1;
+  box-shadow: -1px 0 25px rgba(0,0,0,.36);
+}
+
+.tasty-pancakes__menu-button::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  content: '';
+  transform: translate(-50%, -50%);
+}
+
+.tasty-pancakes__stars {
+  position: absolute;
+  top: 182px;
+  left: -20px;
+}
+
+.tasty-pancakes__star {
+  width: 21px;
+  height: 21px;
+  margin: 5px 0;
+}
+
+
+/* Timing "40 min to ready..." */
+.timing-element {
+  width: 200px;
+  height: 200px;
+  padding: 34px;
+  padding-top: 28px;
+
+  text-align: center;
+
+  background: white;
+  box-shadow: 0 25px 54px rgba(105, 80, 58, .45);
+}
+
+.timing-element--main {
+  background: white url('./img/bg-timing.jpg');
+}
+
+.timing-element__title,
+.timing-element__number--main,
+.timing-element__text {
+  margin: 0;
+}
+
+.timing-element__title {
+  font-size: 18px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #a47d5e;
+}
+
+.timing-element__number--main {
+  font-size: 92px;
+  font-weight: 700;
+  line-height: 92px;
+
+  margin-top: 5px;
+
+  letter-spacing: 13px;
+  text-transform: uppercase;
+
+  color: #dfc691;
+}
+
+.timing-element__text {
+  font-size: 18px;
+  line-height: 23px;
+
+  letter-spacing: 1px;
+
+  color: #979285;
+}
+
 /* Sprite */
 .page-header__socials-link::before,
-.page-header__title::after {
+.page-header__title::after,
+.tasty-pancakes__menu-button::before,
+.tasty-pancakes__star,
+.paginator--left,
+.paginator--right {
   display: block;
 
   background-image: url('./img/sprite.png');
@@ -340,4 +554,33 @@ body {
   height: 14px;
 
   background-position: -47px -27px;
+}
+
+.tasty-pancakes__menu-button::before {
+  width: 9px;
+  height: 16px;
+
+  background-position: -136px -50px;
+}
+
+.tasty-pancakes__star--filled {
+  background-position: -100px -50px;
+}
+
+.tasty-pancakes__star--unfilled {
+  background-position: -69px -50px;
+}
+
+.paginator--left,
+.paginator--right {
+  width: 32px;
+  height: 32px;
+}
+
+.paginator--left {
+  background-position: 0 -50px;
+}
+
+.paginator--right {
+  background-position: -34px -50px;
 }
