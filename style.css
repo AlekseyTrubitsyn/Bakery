@@ -319,9 +319,9 @@ body {
 
   display: flex;
 
-  width: 966px;
+  width: 916px;
   margin: 0;
-  margin-left: 95px;
+  margin-left: 145px;
 
   background: #fff;
   box-shadow: 6px 6px 13px rgba(0,0,0,.47);
@@ -339,7 +339,7 @@ body {
   float: right;
 
   width: 546px;
-  margin-left: -115px;
+  margin-left: -165px;
   padding-top: 65px;
   padding-right: 59px;
   padding-left: 62px;
@@ -423,7 +423,7 @@ body {
   position: absolute;
   z-index: 2;
   top: 232px;
-  left: 395px;
+  left: 345px;
 
   width: 50px;
   height: 50px;
