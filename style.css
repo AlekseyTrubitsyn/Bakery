@@ -658,10 +658,126 @@ body {
   margin: 46px auto 0;
   padding: 13px;
 
+  letter-spacing: 1px;
   text-transform: uppercase;
 
   color: #a47d5e;
   border: 1px solid #9e9c93;
+}
+
+.jibarito-sandwich {
+  padding-top: 87px;
+
+  background: #f3f1e9 url('./img/bg-jibrato.png') no-repeat top center;
+}
+
+.jibarito-sandwich__title {
+  font-size: 48px;
+  font-weight: 700;
+
+  text-align: center;
+  letter-spacing: 3px;
+
+  color: #56534c;
+}
+
+.jibarito-sandwich__subtitle {
+  font-size: 14px;
+
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #a47d5e;
+}
+
+.jibarito-sandwich__features-list {
+  float: left;
+
+  width: 290px;
+
+  text-align: center;
+}
+
+.jibarito-sandwich__feature {
+  margin-bottom: 55px;
+}
+
+.jibarito-sandwich__feature-image {
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0,0,0,.10);
+}
+
+.jibarito-sandwich__item-title {
+  font-size: 30px;
+  font-weight: 700;
+
+  margin-top: 10px;
+  margin-bottom: 15px;
+
+  letter-spacing: 1px;
+
+  color: #a47d5e;
+}
+
+.jibarito-sandwich__item-text {
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  letter-spacing: 2px;
+
+  color: #56534c;
+}
+
+.jibrato-sandwich__right {
+  position: relative;
+
+  float: right;
+
+  margin-top: 85px;
+}
+
+.jibrato-sandwich__timing {
+  position: absolute;
+  top: -23px;
+  right: 10px;
+}
+
+.jibrato-sandwich__timing .timing-element {
+  box-shadow: none;
+}
+
+.jibrato-sandwich__timing .timing-element:nth-child(1),
+.jibrato-sandwich__timing .timing-element:nth-child(2) {
+  margin-bottom: 1px;
+
+  background: rgba(255,255,255,.8);
+}
+
+.jibrato-sandwich__right-link {
+  font-size: 18px;
+  font-weight: 700;
+
+  position: absolute;
+  right: 691px;
+  bottom: -18px;
+
+  width: 171px;
+  padding: 20px;
+
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #dfc691;
+  border-right: 1px dashed #dfc691;
+  background: white;
+}
+
+.jibrato-sandwich__right-image,
+.jibrato-sandwich__timing {
+  box-shadow: 0 0 18px rgba(0,0,0,.20);
 }
 
 /* Timing "40 min to ready..." */
@@ -674,11 +790,8 @@ body {
   text-align: center;
 
   background: white;
-  box-shadow: 0 25px 54px rgba(105, 80, 58, .45);
-}
-
-.timing-element--main {
   background: white url('./img/bg-timing.jpg');
+  box-shadow: 0 25px 54px rgba(105, 80, 58, .45);
 }
 
 .timing-element__title,
@@ -697,15 +810,22 @@ body {
   color: #a47d5e;
 }
 
+.timing-element__number {
+  font-size: 60px;
+  font-weight: 700;
+
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  color: #56534c;
+}
+
 .timing-element__number--main {
   font-size: 92px;
   font-weight: 700;
   line-height: 92px;
 
   margin-top: 5px;
-
-  letter-spacing: 13px;
-  text-transform: uppercase;
 
   color: #dfc691;
 }
