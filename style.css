@@ -771,7 +771,7 @@ body {
   text-transform: uppercase;
 
   color: #dfc691;
-  border-right: 1px dashed #dfc691;
+  border: 1px dashed #dfc691;
   background: white;
 }
 
