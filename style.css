@@ -77,6 +77,7 @@ body {
   width: 106px;
   height: 106px;
 
+  animation: pullDown 3s infinite;
   content: '';
   transform: translate(-50%, 50%);
 
@@ -110,6 +111,7 @@ body {
 
   padding: 25px 48px 25px 38px;
 
+  animation: focus 3s;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -210,6 +212,7 @@ body {
   margin: 0 auto;
   padding: 12px;
 
+  animation: focus 3s;
   text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -229,7 +232,11 @@ body {
 .art-of-cakes__left {
   float: left;
 
-  width: 50%;
+  width: 50%;  
+}
+
+.art-of-cakes__left.animated {
+  animation: focus 3s;
 }
 
 .art-of-cakes__title {
@@ -414,6 +421,8 @@ body {
   align-items: center;
 }
 
+.tasty-pancakes__items-list.animated .tasty-pancakes__item { animation: focus 2s; }
+
 .tasty-pancakes__item--paginator:hover {
   opacity: .7;
 }
@@ -579,6 +588,10 @@ body {
   background-size: cover; /* yep! hardcode*/
 }
 
+.food-menu.animated {
+  animation: slideLeft 2s;
+}
+
 .food-menu--middle {
   z-index: 2;
   right: -30px;
@@ -588,6 +601,10 @@ body {
   opacity: .7;
 }
 
+.food-menu--middle.animated {
+  animation: slideLeft 2.5s;
+}
+
 .food-menu--bottom {
   z-index: 1;
   right: -60px;
@@ -595,6 +612,10 @@ body {
   transform: scale(.84);
 
   opacity: .5;
+}
+
+.food-menu--bottom.animated {
+  animation: slideLeft 3s;
 }
 
 .food-menu__header span,
@@ -699,6 +720,10 @@ body {
   text-align: center;
 }
 
+.jibarito-sandwich__features-list.animated .jibarito-sandwich__feature { animation: slideRight 2s; }
+.jibarito-sandwich__features-list.animated .jibarito-sandwich__feature:nth-of-type(2) { animation: slideRight 2.2s; }
+.jibarito-sandwich__features-list.animated .jibarito-sandwich__feature:nth-of-type(3) { animation: slideRight 2.4s; }
+
 .jibarito-sandwich__feature {
   margin-bottom: 55px;
 }
@@ -737,6 +762,10 @@ body {
 
   margin-top: 85px;
 }
+
+.jibrato-sandwich__timing.animated .timing-element { animation: slideLeft 1.5s; }
+.jibrato-sandwich__timing.animated .timing-element:nth-of-type(2) { animation: slideLeft 1.7s; }
+.jibrato-sandwich__timing.animated .timing-element:nth-of-type(3) { animation: slideLeft 1.9s; }
 
 .jibrato-sandwich__timing {
   position: absolute;
@@ -837,6 +866,7 @@ body {
 .page-footer__menu-link--logo {
   width: auto;
   padding: 23px 45px 0;
+
   background: none;
 }
 
@@ -857,6 +887,8 @@ body {
   background: white url('./img/bg-timing.jpg');
   box-shadow: 0 25px 54px rgba(105, 80, 58, .45);
 }
+
+.timing-element.animated { animation: slideLeft 1s; }
 
 .timing-element__title,
 .timing-element__number--main,
@@ -971,4 +1003,52 @@ body {
 
 .paginator--right {
   background-position: -34px -50px;
+}
+
+@keyframes focus {
+  0% {
+    opacity: .3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(200px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(-200px);
+  }
+}
+
+@keyframes pullDown {
+  0% {
+    transform: translate(-50%, 50%);
+  }  
+  5% {
+    transform: translate(-50%, 70%);
+  }
+  10% {
+    transform: translate(-50%, 45%);
+  }
+  15% {
+    transform: translate(-50%, 50%);
+  }
+  40% {
+    transform: translate(-50%, 50%) rotate(360deg);
+  }
+  55% {
+    transform: translate(-50%, 50%) rotate(0deg);
+  }
 }
